@@ -1,0 +1,16 @@
+{
+  "name": "server-websocket",
+  "version": "1.0.0",
+  "description": "Test Server websocket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "set NODE_ENV=development&&nodemon index.js "
+  },
+  "author": "Cayque D.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  }
+}
