@@ -10,7 +10,9 @@ app.get("/websocket", (req, res) => {
   res.send({ success: true })
 });
 
-const server = app.listen(3001, "127.0.0.1", () => {
+const port = process.env.PORT || 3001;
+
+const server = app.listen(port, () => {
   console.log("Server started");
 });
 
