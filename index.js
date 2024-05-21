@@ -3,6 +3,9 @@ const app = express();
 const WebSocketServer = require("./server-ws")
 
 //Rotas
+app.get("/", (req, res) => {
+  res.send({ message: "Welcome to websocket server!" })
+});
 app.get("/websocket", (req, res) => {
   res.send({ success: true })
 });
